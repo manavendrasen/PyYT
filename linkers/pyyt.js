@@ -1,19 +1,14 @@
-function download() {
-  var python = require("python-shell");
-  var path = require("path");
+function download(link, location) {
+  let { PythonShell } = require("python-shell");
+  let pyshell = new PythonShell("engine/run.py");
 
-  var ytlink = document.getElementById("ytlink").value;
-  document.getElementById("ytlink").value = "Wait";
+  pyshell.send(link);
+  pyshell.send(location);
 
-  var options = {
-    scriptPath: path.join(__dirname, "/../engine/"),
-    args: [ytlink],
-  };
-
-  var pyyt = new python("run.py");
-  pyyt.on("message", (message) => {
+  pyshell.on("message", function (message) {
+    // received a message sent from the Python script (a simple "print" statement)
     console.log(message);
   });
 }
 
-export default download;
+module.exports = download;
