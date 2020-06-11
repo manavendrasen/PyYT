@@ -11,6 +11,13 @@
     <!-- Bootstrap  -->
     <script language="javascript" src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- test -->
+    <script src="./linkers/test.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/styles.css" />
+
     <title>PyYTD</title>
   </head>
   <body>
@@ -22,16 +29,18 @@
       </div>
     </div>
     <div class="container">
-      <form action="">
+      <form action="/" method="post"
         <div class="form-group">
           <label for="">Youtube URL: </label>
-          <input class="form-control" type="text" name="" id="" />
+          <input class="form-control" type="text" name="link" id="" />
           <label>Location: </label>
-          <input class="form-control" type="text" name="" id="" />
+          <input class="form-control" type="text" name="loc" id="" />
           <small id="emailHelp" class="form-text text-muted"
             >Enter the location without quotes.</small
           >
-          <button class="btn btn-dark btn-block" type="submit">Download</button>
+          <button class="btn btn-dark btn-block" type="submit">
+            Download
+          </button>
         </div>
       </form>
     </div>
