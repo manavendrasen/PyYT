@@ -1,6 +1,7 @@
-function download(link, location) {
+function test(link, location) {
+  console.log("Cleared");
   let { PythonShell } = require("python-shell");
-  let pyshell = new PythonShell("engine/run.py");
+  let pyshell = new PythonShell("engine/test.py");
 
   pyshell.send(link);
   pyshell.send(location);
@@ -10,5 +11,4 @@ function download(link, location) {
     console.log(message);
   });
 }
-
-module.exports = download;
+module.exports = test;
