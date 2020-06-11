@@ -16,4 +16,4 @@ function download() {
   });
 }
 
-module.exports = download;
+export default download;
