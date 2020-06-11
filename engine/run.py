@@ -1,10 +1,16 @@
-from pytube import Playlist, YouTube
+from pytube import YouTube
 
-link = "https://www.youtube.com/playlist?list=PLUQ0yHXLtSQzBdCqw-2pD8Q41ebi_r-81"
+print("Connecting to youtube ...")
+# link = "https://www.youtube.com/playlist?list=PLUQ0yHXLtSQzBdCqw-2pD8Q41ebi_r-81"
+link = input()
+location = input()
 
-pl = Playlist(link)
-print(pl)
-videos = pl.videos
+yt = YouTube(link)
+print(yt.title + " " + location)
+# pl = Playlist(link)
 
-for vid in videos:
-    yt = vid.streams.first().download()
+# videos = pl.videos
+
+# for vid in videos:
+#     print(vid.title)
+#     # yt = vid.streams.first().download()
