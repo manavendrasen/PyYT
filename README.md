@@ -2,7 +2,7 @@
 
 _Electron based cross-platfrom desktop app for downloading youtube videos and playlists. Using python as a backend_
 
-![UI Image](https://imgur.com/a/BLXnPJX)
+![UI Image](https://raw.githubusercontent.com/manavendrasen/PyYT/master/UI/ui.png)
 
 ## To Use
 
