@@ -18,26 +18,27 @@
     <!-- css -->
     <link rel="stylesheet" href="css/styles.css" />
 
-    <title>PyYTD</title>
+    <title>PyYT</title>
   </head>
   <body>
     <!-- top   -->
     <div class="jumbotron">
       <div class="container">
-        <h1>PyYT</h1>
-        <p>Electron and Python based youtube video downloader.</p>
+        <h1 class="heading">PyYT</h1>
+
+        <p>Electron, Express.js and Python based youtube video downloader.</p>
       </div>
     </div>
     <div class="container">
-      <form action="/" method="post"
+      <form action="/" method="post">
         <div class="form-group">
-          <label for="">Youtube URL: </label>
+          <label for=""
+            >Youtube URL:
+            <p style="display: inline; color: red;">*</p>
+          </label>
           <input class="form-control" type="text" name="link" id="" />
-          <label>Location: </label>
+          <label>Location:</label>
           <input class="form-control" type="text" name="loc" id="" />
-          <small id="emailHelp" class="form-text text-muted"
-            >Enter the location without quotes.</small
-          >
           <button class="btn btn-dark btn-block" type="submit">
             Download
           </button>
